@@ -24,7 +24,7 @@ export default function GreenNestGuestHouse() {
   const amenities = [
     {
       icon: Wifi,
-      name: "Free Wi-Fi(30GB/month",
+      name: "Free Wi-Fi(30GB/month)",
       description: "Good-speed internet",
     },
     { icon: Droplet, name: "Hot Water", description: "24/7 availability" },
@@ -36,10 +36,10 @@ export default function GreenNestGuestHouse() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      country: "Australia",
+      name: "Brian",
+      country: "USA",
       rating: 5,
-      text: "An absolute gem! The room was spotless, and the hosts were incredibly welcoming. The private kitchen was a huge plus for preparing our own meals.",
+      text: "I felt at home here.  Pavan and his Mother were very warm and welcoming.  AC room, washing machine, spotless kitchen/refrigerator.  Many thanks !",
     },
     {
       name: "Marco Rossi",
@@ -280,7 +280,7 @@ export default function GreenNestGuestHouse() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <a
-              href="https://www.airbnb.com"
+              href="https://www.airbnb.co.in/rooms/1359104449767798121"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
@@ -291,7 +291,7 @@ export default function GreenNestGuestHouse() {
               <p className="text-gray-600">Book on Airbnb</p>
             </a>
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/lk/green-nest-weligama.en-gb.html?aid=356980&label=gog235jc-10CAsohQFCE2dyZWVuLW5lc3Qtd2VsaWdhbWFIM1gDaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALb-srKBsACAdICJGJjY2ZhMmI2LWIwZmMtNDFhZC1iZTI0LWE1ZjQ5ODQxOTcyNdgCAeACAQ&sid=c9c055d8f8aa6b3aeadb0076ca1fb2cb&dist=0&keep_landing=1&sb_price_type=total&type=total&chal_t=1767030107569&force_referer=https%3A%2F%2Fwww.google.com%2F"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
@@ -302,7 +302,7 @@ export default function GreenNestGuestHouse() {
               <p className="text-gray-600">Reserve now</p>
             </a>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/+9471416957"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
@@ -311,9 +311,9 @@ export default function GreenNestGuestHouse() {
               <div className="text-xl font-bold text-gray-800 mb-2">
                 WhatsApp
               </div>
-              <p className="text-gray-600">Direct booking</p>
+              <p className="text-gray-600">Direct booking(Good offers)</p>
             </a>
-            {/* <a
+            <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -324,7 +324,7 @@ export default function GreenNestGuestHouse() {
                 Instagram
               </div>
               <p className="text-gray-600">DM us</p>
-            </a> */}
+            </a>
           </div>
         </div>
       </section>
@@ -395,17 +395,17 @@ export default function GreenNestGuestHouse() {
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-emerald-600" />
                   <span className="text-gray-700">
-                    Negombo, Western Province, Sri Lanka
+                    Weligama, Southern Province, Sri Lanka
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-emerald-600" />
-                  <span className="text-gray-700">+94 XX XXX XXXX</span>
+                  <span className="text-gray-700">+94 71 4169 537</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-emerald-600" />
                   <span className="text-gray-700">
-                    info@greennestguesthouse.lk
+                    greennestweligama@gmail.com
                   </span>
                 </div>
               </div>
@@ -453,7 +453,7 @@ export default function GreenNestGuestHouse() {
             </a>
           </div>
           <p className="text-gray-500 text-sm mt-6">
-            © 2025 Green Nest Guest House. All rights reserved.
+            © 2026 Green Nest Guest House. All rights reserved.
           </p>
         </div>
       </footer>
