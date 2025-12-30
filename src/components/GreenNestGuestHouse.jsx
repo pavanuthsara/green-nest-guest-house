@@ -13,6 +13,8 @@ import {
   Star,
 } from "lucide-react";
 
+import InfrontImage from "../assets/green-nest-guest-house-weligama-infront.webp";
+
 export default function GreenNestGuestHouse() {
   const [formData, setFormData] = useState({
     name: "",
@@ -42,16 +44,16 @@ export default function GreenNestGuestHouse() {
       text: "I felt at home here.  Pavan and his Mother were very warm and welcoming.  AC room, washing machine, spotless kitchen/refrigerator.  Many thanks !",
     },
     {
-      name: "Marco Rossi",
-      country: "Italy",
+      name: "Alexey",
+      country: "Russia",
       rating: 5,
-      text: "Perfect location and amazing value for money. The patio area is beautiful for morning coffee. Highly recommended for anyone visiting Sri Lanka!",
+      text: "We have no place to stay in the morning and the host helped us by allowing to stay for 1 night! The host is super friendly, they gave us welcome drink and a evening coffee. The apartment is new and smell fresh, no mold! Bathroom is super clean and new. We love the apartment all right! I recommend this place to a friend.",
     },
     {
-      name: "Emily Chen",
-      country: "Singapore",
+      name: "Nikita",
+      country: "Russia",
       rating: 5,
-      text: "Felt like home away from home. The amenities exceeded our expectations, and the air conditioning was a lifesaver in the tropical heat.",
+      text: "Pavan was very welcoming, and always ready to help. Offered breakfast and gave a ride to the city. Room was comfy",
     },
   ];
 
@@ -96,7 +98,7 @@ export default function GreenNestGuestHouse() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <span className="text-2xl font-bold text-emerald-600">
-                Green Nest
+                Green Nest Weligama
               </span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -139,8 +141,8 @@ export default function GreenNestGuestHouse() {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600"
-            alt="Green Nest Guest House"
+            src={InfrontImage}
+            alt="Green Nest Guest House weligama front view"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -218,7 +220,7 @@ export default function GreenNestGuestHouse() {
       <section id="gallery" className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-            Our Room
+            Gallery
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {galleryImages.map((image, index) => (
@@ -302,7 +304,7 @@ export default function GreenNestGuestHouse() {
               <p className="text-gray-600">Reserve now</p>
             </a>
             <a
-              href="https://wa.me/+9471416957"
+              href="https://wa.me/+94714169537"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
