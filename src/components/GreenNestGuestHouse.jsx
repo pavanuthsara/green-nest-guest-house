@@ -13,6 +13,8 @@ import {
   Star,
 } from "lucide-react";
 
+import InfrontImage from "../assets/green-nest-guest-house-weligama-infront.webp";
+
 export default function GreenNestGuestHouse() {
   const [formData, setFormData] = useState({
     name: "",
@@ -24,7 +26,7 @@ export default function GreenNestGuestHouse() {
   const amenities = [
     {
       icon: Wifi,
-      name: "Free Wi-Fi(30GB/month",
+      name: "Free Wi-Fi(30GB/month)",
       description: "Good-speed internet",
     },
     { icon: Droplet, name: "Hot Water", description: "24/7 availability" },
@@ -36,22 +38,22 @@ export default function GreenNestGuestHouse() {
 
   const testimonials = [
     {
-      name: "Sarah Johnson",
-      country: "Australia",
+      name: "Brian",
+      country: "USA",
       rating: 5,
-      text: "An absolute gem! The room was spotless, and the hosts were incredibly welcoming. The private kitchen was a huge plus for preparing our own meals.",
+      text: "I felt at home here.  Pavan and his Mother were very warm and welcoming.  AC room, washing machine, spotless kitchen/refrigerator.  Many thanks !",
     },
     {
-      name: "Marco Rossi",
-      country: "Italy",
+      name: "Alexey",
+      country: "Russia",
       rating: 5,
-      text: "Perfect location and amazing value for money. The patio area is beautiful for morning coffee. Highly recommended for anyone visiting Sri Lanka!",
+      text: "We have no place to stay in the morning and the host helped us by allowing to stay for 1 night! The host is super friendly, they gave us welcome drink and a evening coffee. The apartment is new and smell fresh, no mold! Bathroom is super clean and new. We love the apartment all right! I recommend this place to a friend.",
     },
     {
-      name: "Emily Chen",
-      country: "Singapore",
+      name: "Nikita",
+      country: "Russia",
       rating: 5,
-      text: "Felt like home away from home. The amenities exceeded our expectations, and the air conditioning was a lifesaver in the tropical heat.",
+      text: "Pavan was very welcoming, and always ready to help. Offered breakfast and gave a ride to the city. Room was comfy",
     },
   ];
 
@@ -96,7 +98,7 @@ export default function GreenNestGuestHouse() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
               <span className="text-2xl font-bold text-emerald-600">
-                Green Nest
+                Green Nest Weligama
               </span>
             </div>
             <div className="hidden md:flex space-x-8">
@@ -139,8 +141,8 @@ export default function GreenNestGuestHouse() {
       <section id="home" className="relative h-screen">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=1600"
-            alt="Green Nest Guest House"
+            src={InfrontImage}
+            alt="Green Nest Guest House weligama front view"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-black bg-opacity-40"></div>
@@ -218,7 +220,7 @@ export default function GreenNestGuestHouse() {
       <section id="gallery" className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-            Our Room
+            Gallery
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {galleryImages.map((image, index) => (
@@ -280,7 +282,7 @@ export default function GreenNestGuestHouse() {
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <a
-              href="https://www.airbnb.com"
+              href="https://www.airbnb.co.in/rooms/1359104449767798121"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
@@ -291,7 +293,7 @@ export default function GreenNestGuestHouse() {
               <p className="text-gray-600">Book on Airbnb</p>
             </a>
             <a
-              href="https://www.booking.com"
+              href="https://www.booking.com/hotel/lk/green-nest-weligama.en-gb.html?aid=356980&label=gog235jc-10CAsohQFCE2dyZWVuLW5lc3Qtd2VsaWdhbWFIM1gDaIUBiAEBmAEzuAEXyAEM2AED6AEB-AEBiAIBqAIBuALb-srKBsACAdICJGJjY2ZhMmI2LWIwZmMtNDFhZC1iZTI0LWE1ZjQ5ODQxOTcyNdgCAeACAQ&sid=c9c055d8f8aa6b3aeadb0076ca1fb2cb&dist=0&keep_landing=1&sb_price_type=total&type=total&chal_t=1767030107569&force_referer=https%3A%2F%2Fwww.google.com%2F"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
@@ -302,7 +304,7 @@ export default function GreenNestGuestHouse() {
               <p className="text-gray-600">Reserve now</p>
             </a>
             <a
-              href="https://wa.me/"
+              href="https://wa.me/+94714169537"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white p-6 rounded-lg shadow-md hover:shadow-xl transition"
@@ -311,9 +313,9 @@ export default function GreenNestGuestHouse() {
               <div className="text-xl font-bold text-gray-800 mb-2">
                 WhatsApp
               </div>
-              <p className="text-gray-600">Direct booking</p>
+              <p className="text-gray-600">Direct booking(Good offers)</p>
             </a>
-            {/* <a
+            <a
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -324,7 +326,7 @@ export default function GreenNestGuestHouse() {
                 Instagram
               </div>
               <p className="text-gray-600">DM us</p>
-            </a> */}
+            </a>
           </div>
         </div>
       </section>
@@ -395,17 +397,17 @@ export default function GreenNestGuestHouse() {
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-emerald-600" />
                   <span className="text-gray-700">
-                    Negombo, Western Province, Sri Lanka
+                    Weligama, Southern Province, Sri Lanka
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-emerald-600" />
-                  <span className="text-gray-700">+94 XX XXX XXXX</span>
+                  <span className="text-gray-700">+94 71 4169 537</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-emerald-600" />
                   <span className="text-gray-700">
-                    info@greennestguesthouse.lk
+                    greennestweligama@gmail.com
                   </span>
                 </div>
               </div>
@@ -453,7 +455,7 @@ export default function GreenNestGuestHouse() {
             </a>
           </div>
           <p className="text-gray-500 text-sm mt-6">
-            © 2025 Green Nest Guest House. All rights reserved.
+            © 2026 Green Nest Guest House. All rights reserved.
           </p>
         </div>
       </footer>
