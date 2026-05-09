@@ -1,1 +1,7 @@
-@import "tailwindcss";
+body {
+  font-family: "Libertinus Serif", sans-serif; /* Your Google Font */
+  background-color: #f6f3eb;
+  color: #333333;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
