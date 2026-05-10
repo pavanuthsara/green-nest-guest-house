@@ -1,13 +1,8 @@
 import type { Component } from 'solid-js';
-import Comp from './Comp';
+import ComingSoon from './ComingSoon';
 
 const App: Component = () => {
-  return (
-    <>
-      <h1>Green Nest Guest House - Weligama</h1>
-      <Comp />
-    </>
-  );
+  return <ComingSoon />;
 };
 
 export default App;
