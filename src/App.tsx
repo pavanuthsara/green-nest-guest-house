@@ -1,8 +1,8 @@
 import type { Component } from 'solid-js';
-import ComingSoon from './ComingSoon';
+import LandingPage from './LandingPage';
 
 const App: Component = () => {
-  return <ComingSoon />;
+  return <LandingPage />;
 };
 
 export default App;
