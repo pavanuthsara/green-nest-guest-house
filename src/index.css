@@ -2,10 +2,103 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  font-family: "Libertinus Serif", sans-serif; /* Your Google Font */
-  background-color: #f6f3eb;
-  color: #333333;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* ─── Base Typography ─────────────────────────────────────── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Noto Sans", Inter, system-ui, sans-serif;
+    background-color: #f6f3eb;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: "Libertinus Serif", Georgia, serif;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+  }
 }
+
+/* ─── Component Layer ─────────────────────────────────────── */
+@layer components {
+  /* CTA Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2.5 bg-forest text-white
+           font-semibold px-7 py-3.5 rounded-pill shadow-wa
+           transition-all duration-200 ease-out
+           hover:bg-forest-dark hover:-translate-y-0.5 hover:shadow-wa-hover
+           active:translate-y-0 active:shadow-wa-active
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-forest focus-visible:outline-offset-2;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2.5 bg-transparent text-forest
+           font-semibold px-7 py-3.5 rounded-pill border-2 border-forest
+           transition-all duration-200 ease-out
+           hover:bg-forest hover:text-white hover:-translate-y-0.5
+           active:translate-y-0
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-forest focus-visible:outline-offset-2;
+  }
+
+  .btn-wa {
+    @apply inline-flex items-center justify-center gap-2.5 bg-wa text-white
+           font-semibold px-7 py-3.5 rounded-pill shadow-wa
+           transition-all duration-200 ease-out
+           hover:bg-wa-hover hover:-translate-y-0.5 hover:shadow-wa-hover
+           active:translate-y-0 active:shadow-wa-active
+           focus-visible:outline focus-visible:outline-2 focus-visible:outline-wa focus-visible:outline-offset-2;
+  }
+
+  /* Section wrapper */
+  .section-pad {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+
+  .container-max {
+    @apply max-w-6xl mx-auto;
+  }
+
+  /* Pill badge */
+  .badge {
+    @apply inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full
+           text-sm font-semibold tracking-wide;
+  }
+
+  /* Card style */
+  .glass-card {
+    @apply bg-white/70 backdrop-blur-sm border border-forest-200/50 rounded-2xl shadow-card;
+  }
+
+  /* Amenity icon box */
+  .icon-box {
+    @apply w-12 h-12 rounded-xl bg-forest-50 border border-forest-100
+           flex items-center justify-center text-forest flex-shrink-0;
+  }
+}
+
+/* ─── Utility Layer ─────────────────────────────────────── */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Decorative divider line */
+  .divider {
+    @apply w-16 h-1 bg-gradient-to-r from-forest to-forest-light rounded-full mx-auto;
+  }
+
+  /* Section heading accent */
+  .heading-accent {
+    @apply text-forest-light font-semibold text-sm tracking-widest uppercase mb-3;
+  }
+}
+
+/* ─── Custom Scrollbar ─────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #f6f3eb; }
+::-webkit-scrollbar-thumb { background: #6aa878; border-radius: 999px; }
